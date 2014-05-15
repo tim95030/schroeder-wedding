@@ -5,4 +5,10 @@
   <h3>Gennifer Marie Williams </h3>
   <h3>and</h3>
   <h3>Timothy Edward Schroeder</h3>
+  <br />
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <img src="images/HappyCouple.jpg" class="img-responsive" />
+    </div>
+  </div>
 <?php echo $footer; ?>
