@@ -3,7 +3,17 @@
 require 'flight/Flight.php';
 require 'controllers/utils.php';
 
-Flight::register('db', 'PDO', array('mysql:host=localhost;dbname=wedding', 'wedding', 'vrW62sssLcertjfv'));
+Flight::set('flight.log_errors', false);
+
+define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+define('DB_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+define('DB_BASE','wedding');
+define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
+
+$dsn = 'mysql:dbname='.DB_BASE.';host='.DB_HOST.';port='.DB_PORT;
+
+Flight::register('db', 'PDO', array($dsn, DB_USER, DB_PASS));
 
 Flight::route('/', function() {
   render_page("home", "Gennifer Williams' and Tim Schroeder's Wedding Page");
@@ -18,7 +28,6 @@ Flight::route('/RSVP', function() {
 });
 
 include_once 'controllers/recipes.php';
-Flight::set('flight.log_errors', false);
 Flight::start();
 
 ?>
