@@ -22,7 +22,7 @@ Flight::route('POST /recipes/add', function() {
     ':submitter' => Flight::request()->data->submitter
   ));
   $id = $db->lastInsertId('recipeID');
-  render_page("recipe", "Thank You for Submitting your Recipe!");
+  render_page("thankyou", "Thank You for Submitting your Recipe!");
 
 });
 
