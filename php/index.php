@@ -3,7 +3,7 @@
 require 'flight/Flight.php';
 require 'controllers/utils.php';
 
-Flight::register('db', 'PDO', array('mysql:host=localhost;dbname=php', 'adminB5wvs3P', 'ivcHw2Xg3fCP'));
+Flight::register('db', 'PDO', array('mysql:host=localhost;dbname=wedding', 'wedding', 'vrW62sssLcertjfv'));
 
 Flight::route('/', function() {
   render_page("home", "Gennifer Williams' and Tim Schroeder's Wedding Page");
