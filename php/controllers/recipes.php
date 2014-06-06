@@ -6,17 +6,6 @@ Flight::route('/recipes', function() {
   render_page("recipes", "Tim and Genni's Wedding Recipe Book");
 });
 
-Flight::route('/recipes/@id', function($id) {
-  $db = Flight::db();
-  $stmt = $db->prepare('SELECT FROM recipes where recipeID=:id');
-  $stmt->execute(array(':id' => $id));
-  if ($stmt->rowCount() < 1) {
-    Flight::notFound();
-  }
-  $recipe = $stmt->fetch();
-  render_page("recipe", "Tim and Genni's Wedding Recipe Book - Recipe " . $id, array('recipe' => $recipe));
-});
-
 Flight::route('POST /recipes/add', function() {
   $db = Flight::db();
 
@@ -33,8 +22,19 @@ Flight::route('POST /recipes/add', function() {
     ':submitter' => Flight::request()->data->submitter
   ));
   $id = $db->lastInsertId('recipeID');
-  Flight::redirect('/recipes/'.$id);
+  Flight::redirect('/recipe/'.$id);
 
+});
+
+Flight::route('/recipe/@id', function($id) {
+  $db = Flight::db();
+  $stmt = $db->prepare('SELECT FROM recipes where recipeID=:id');
+  $stmt->execute(array(':id' => $id));
+  if ($stmt->rowCount() < 1) {
+    Flight::notFound();
+  }
+  $recipe = $stmt->fetch();
+  render_page("recipe", "Tim and Genni's Wedding Recipe Book - Recipe " . $id, array('recipe' => $recipe));
 });
 
 
