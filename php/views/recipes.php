@@ -22,11 +22,11 @@
     <label for="notes">Notes</label>
     <textarea id="notes" rows="2" class="form-control" placeholder="Enter any optional notes"></textarea>
   </div>
-  <div class="form-group">
+  <div class="form-group col-md-5">
     <label for="owner">Original Recipe Author</label>
     <input type="text" class="form-control" id="owner" placeholder="Enter the original author of the recipe if known" />
   </div>
-  <div class="form-group">
+  <div class="form-group col-md-5 col-md-offset-2">
     <label for="submitter">Submitter</label>
     <input required type="text" class="form-control" id="submitter" placeholder="Enter your name" />
   </div>
