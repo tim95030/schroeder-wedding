@@ -28,7 +28,7 @@ Flight::route('POST /recipes/add', function() {
 
 Flight::route('/recipe/@id', function($id) {
   $db = Flight::db();
-  $stmt = $db->prepare('SELECT FROM recipes where recipeID=:id');
+  $stmt = $db->prepare('SELECT * FROM recipes where recipeID = :id');
   $stmt->execute(array(':id' => $id));
   if ($stmt->rowCount() < 1) {
     Flight::notFound();
