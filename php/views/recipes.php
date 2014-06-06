@@ -30,6 +30,9 @@
     <label for="submitter">Submitter</label>
     <input required type="text" class="form-control" id="submitter" placeholder="Enter your name" />
   </div>
+  <div class="form-group col-md-4 col-md-offset-4">
+    <input type="submit" class="btn" value="Submit Recipe" />
+  </div>
 </form>
 
 <?php echo $footer; ?>
