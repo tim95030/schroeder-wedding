@@ -1,7 +1,7 @@
 <?php echo $header; ?>
 <h1>Recipes</h1>
 
-<form type="POST" action="recipes/add" role="form">
+<form method="POST" action="recipes/add" role="form">
   <div class="form-group">
     <label for="title">Title</label>
     <input required type="text" class="form-control" id="title" placeholder="Enter Recipe Title" />

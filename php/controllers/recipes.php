@@ -21,8 +21,7 @@ Flight::route('POST /recipes/add', function() {
   $db = Flight::db();
 
   //insert into database with a prepared statement
-  $stmt = $db->prepare('INSERT INTO recipes (title,description,ingredients,directions,notes,image,owner, submitter) 
-    VALUES (:title, :description, :ingredients, :directions, :notes, :image, :owner, :submitter)');
+  $stmt = $db->prepare('INSERT INTO recipes (title,description,ingredients,directions,notes,image,owner, submitter) VALUES (:title, :description, :ingredients, :directions, :notes, :image, :owner, :submitter)');
   $stmt->execute(array(
     ':title' => Flight::request()->data->title,
     ':description' => Flight::request()->data->description,
