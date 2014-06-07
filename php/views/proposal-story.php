@@ -4,6 +4,8 @@
 <script type="text/javascript" src="js/libs/jquery.js"></script>
 <script type="text/javascript" src="js/libs/galleria-1.2.9.js"></script>
 
+<div class="row">
+  <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 <div id="galleria">
   <img src="images/theplace.jpg" data-title="The Place" data-description="Hotel Monteleone in New Orleans, Louisiana" />
   <img src="images/thering.jpg" data-title="The Ring" />
@@ -62,7 +64,7 @@
     response.  After many tears, kisses, hugs, and yeses I was finally able give her the ring and begin 
     breathing again.
 </div>
-
+</div></div>
 <script>
   Galleria.loadTheme('js/galleria/themes/galleria.classic.min.js');
   Galleria.run('#galleria', {
