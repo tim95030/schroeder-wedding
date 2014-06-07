@@ -25,6 +25,7 @@ body {
   -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px; 
   min-height: 97%;
+  z-index: 10;
 }
 
 #guestlist ul {
@@ -179,9 +180,9 @@ body {
 #fancy-top {
   background-image: url("../images/top.png");
   background-position: 50% 0%;
-  background-size: 30% 77%;
+  background-size: 37% 75%;
   background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
+  position: relative;
   height: 75px;
-  top: 0; }
+  z-index: 1000;
+}

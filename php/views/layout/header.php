@@ -9,8 +9,8 @@
   <body>
     <div class="container">
       <div class="row">
+        <div id="fancy-top"></div>
         <div class="bg-container text-center col-md-10 col-md-offset-1">
-          <div id="fancy-top"></div>
             <div class="btn-group">
               <a href="/" class="btn btn-default <?php if ($page == "/") { echo "active"; } ?>" role="button">Home</a>
               <a href="/proposal-story" class="btn btn-default <?php if ($page == "/proposal-story") { echo "active"; } ?>" role="button">Proposal Story</a>
