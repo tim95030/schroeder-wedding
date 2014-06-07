@@ -9,16 +9,23 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.ember-view {
-  height: 100%; }
+.container {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
 
 .bg-container {
-  margin-top: 30px;
+  margin-top: 29px;
   padding-top: 30px;
   background: #fafafa;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
   -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px; }
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px; 
+  min-height: 97%;
+}
 
 #guestlist ul {
   list-style-type: none; }
