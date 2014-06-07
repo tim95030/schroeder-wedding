@@ -68,7 +68,8 @@
 <script>
   Galleria.loadTheme('js/galleria/themes/galleria.classic.min.js');
   Galleria.run('#galleria', {
-      _toggleInfo: false
+      _toggleInfo: false,
+      height: 1
     });
 </script>
 <?php echo $footer; ?>
