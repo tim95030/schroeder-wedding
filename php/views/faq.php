@@ -125,7 +125,10 @@ foreach ($faqs as $tag => $faq) { ?>
       $("body").attr("data-target", "#scrollSpy");
       $("#faqNav").affix({
         offset: {
-          top: 150
+          top: 50, 
+          bottom: function () {
+            return (this.bottom = $('.footer').outerHeight(true))
+          }
         }
       });
     });
