@@ -1,5 +1,10 @@
-<?php echo $header;
+<?php echo $header; ?>
 
+<script type="text/javascript" src="js/libs/jquery.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<?php
 $faqs = array(
   "guests" => array(
     "question" => "Can I bring guests?",
