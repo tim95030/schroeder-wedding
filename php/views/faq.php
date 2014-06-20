@@ -96,7 +96,7 @@ $faqs = array(
 
 <?php
 foreach ($faqs as $tag => $faq) { ?>
-      <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></li>
+      <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></a></li>
 <?php
 }
 ?>
