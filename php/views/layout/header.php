@@ -17,4 +17,5 @@
               <a href="http://www.myregistry.com/public/schroederwedding" target="_blank" class="btn btn-default" role="button">Registry</a>
               <a href="/recipes" class="btn btn-default <?php if ($page == "/recipes") { echo "active"; } ?>" role="button">Recipes</a>
               <a href="/RSVP" class="btn btn-default <?php if ($page == "/RSVP") { echo "active"; } ?>" role="button">RSVP</a>
+              <a href="/FAQ" class="btn btn-default <?php if ($page == "/FAQ") { echo "active"; } ?>" role="button">FAQs</a>
             </div>
