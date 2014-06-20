@@ -1,6 +1,6 @@
 <?php echo $header;
 
-faqs = array(
+$faqs = array(
   "guests" => array(
     "question" => "Can I bring guests?",
     "answer" => ""
