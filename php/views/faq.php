@@ -145,17 +145,27 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
 
   </div>
 
+  <a href="#" class="back-to-top">Back to Top</a>
+
   <script type="text/javascript">
 
     $('a[href^="#"]').on('click', function(event) {
 
       var target = $( $(this).attr('href') );
-
+      var offset = 220;
+      var duration = 500;
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > offset) {
+              $('.back-to-top').fadeIn(duration);
+          } else {
+              $('.back-to-top').fadeOut(duration);
+          }
+      });
       if( target.length ) {
           event.preventDefault();
           $('html, body').animate({
               scrollTop: target.offset().top
-          }, 1000);
+          }, duration);
       }
 
     });
