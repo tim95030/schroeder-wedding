@@ -110,7 +110,7 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
     </ul>
   </div>
 
-  <div class="col-sm-4 col-sm-offset-2 hidden-xs text-left clearfix">
+  <div class="col-sm-5 col-sm-offset-2 hidden-xs text-left clearfix">
     <ul id="faqNavRight">
     <?php
     foreach ($faqs_right as $tag => $faq) { ?>
