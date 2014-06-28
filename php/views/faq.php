@@ -148,12 +148,12 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
   <a href="#" class="back-to-top">Back to Top</a>
 
   <script type="text/javascript">
+    var offset = 220;
+    var duration = 500;
 
     $('a[href^="#"]').on('click', function(event) {
 
       var target = $( $(this).attr('href') );
-      var offset = 220;
-      var duration = 500;
       if( target.length ) {
           event.preventDefault();
           $('html, body').animate({
