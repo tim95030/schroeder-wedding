@@ -99,8 +99,8 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
 <h1>FAQs</h1>
 
 
-  <div class="col-md-5 hidden-xs">
-    <ul id="faqNavLeft" class="nav">
+  <div class="col-md-4 col-md-offset-2 hidden-xs text-left">
+    <ul id="faqNavLeft">
     <?php
     foreach ($faqs_left as $tag => $faq) { ?>
       <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></a></li>
@@ -110,8 +110,8 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
     </ul>
   </div>
 
-  <div class="col-md-5 col-md-offset-1 hidden-xs">
-    <ul id="faqNavRight" class="nav">
+  <div class="col-md-4 col-md-offset-2 hidden-xs text-left">
+    <ul id="faqNavRight">
     <?php
     foreach ($faqs_left as $tag => $faq) { ?>
       <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></a></li>
@@ -122,7 +122,7 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
   </div>
 
   <div class="col-xs-12 visible-xs">
-    <ul id="faqNavRight" class="nav">
+    <ul id="faqNavRight">
     <?php
     foreach ($faqs as $tag => $faq) { ?>
       <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></a></li>
@@ -144,17 +144,5 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
 ?>
 
   </div>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("body").attr("data-spy","scroll");
-      $("body").attr("data-target", "#scrollSpy");
-      $("#faqNav").affix({
-        offset: {
-          top: 0, 
-          bottom: 500
-      });
-    });
-  </script>
 
 <?php echo $footer; ?>
