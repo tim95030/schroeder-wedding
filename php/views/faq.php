@@ -113,7 +113,7 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
   <div class="col-sm-4 col-sm-offset-2 hidden-xs text-left clearfix">
     <ul id="faqNavRight">
     <?php
-    foreach ($faqs_left as $tag => $faq) { ?>
+    foreach ($faqs_right as $tag => $faq) { ?>
       <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></a></li>
     <?php
     }
@@ -154,18 +154,6 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
       var target = $( $(this).attr('href') );
       var offset = 220;
       var duration = 500;
-      $(window).scroll(function() {
-          if ($(this).scrollTop() > offset) {
-              $('.back-to-top').fadeIn(duration);
-          } else {
-              $('.back-to-top').fadeOut(duration);
-          }
-      });
-      $('.back-to-top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, duration);
-        return false;
-      });
       if( target.length ) {
           event.preventDefault();
           $('html, body').animate({
@@ -173,6 +161,18 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
           }, duration);
       }
 
+    });
+    $(window).scroll(function() {
+          if ($(this).scrollTop() > offset) {
+              $('.back-to-top').fadeIn(duration);
+          } else {
+              $('.back-to-top').fadeOut(duration);
+          }
+      });
+    $('.back-to-top').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, duration);
+      return false;
     });
   </script>
 
