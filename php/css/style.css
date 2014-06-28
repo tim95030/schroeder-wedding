@@ -185,7 +185,7 @@ body {
   z-index: 1000;
 }
 
-.back-to-top {
+a.back-to-top {
     position: fixed;
     top: 2em;
     right: 2em;
@@ -197,6 +197,6 @@ body {
     display: none;
 }
 
-.back-to-top:hover {    
+a.back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
 }
