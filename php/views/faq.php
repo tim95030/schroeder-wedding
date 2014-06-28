@@ -146,16 +146,18 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
   </div>
 
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('a[href^="#"]').on('click', function(event) {
-          var target = $(this.href);
-          if( target.length ) {
-              event.preventDefault();
-              $('html, body').animate({
-                  scrollTop: target.offset().top
-              }, 1000);
-          }
-      });
+
+    $('a[href^="#"]').on('click', function(event) {
+
+      var target = $( $(this).attr('href') );
+
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
+
     });
   </script>
 
