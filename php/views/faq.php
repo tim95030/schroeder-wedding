@@ -161,6 +161,11 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
               $('.back-to-top').fadeOut(duration);
           }
       });
+      $('.back-to-top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      });
       if( target.length ) {
           event.preventDefault();
           $('html, body').animate({
