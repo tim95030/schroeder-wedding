@@ -99,7 +99,7 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
 <h1>FAQs</h1>
 
 
-  <div class="col-md-4 col-md-offset-2 hidden-xs text-left">
+  <div class="col-sm-4 col-sm-offset-1 hidden-xs text-left">
     <ul id="faqNavLeft">
     <?php
     foreach ($faqs_left as $tag => $faq) { ?>
@@ -110,7 +110,7 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
     </ul>
   </div>
 
-  <div class="col-md-4 col-md-offset-2 hidden-xs text-left">
+  <div class="col-sm-4 col-sm-offset-2 hidden-xs text-left clearfix">
     <ul id="faqNavRight">
     <?php
     foreach ($faqs_left as $tag => $faq) { ?>
@@ -121,8 +121,8 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
     </ul>
   </div>
 
-  <div class="col-xs-12 visible-xs">
-    <ul id="faqNavRight">
+  <div class="col-xs-12 visible-xs clearfix">
+    <ul id="faqNavXS">
     <?php
     foreach ($faqs as $tag => $faq) { ?>
       <li><a href="#<?php echo $tag; ?>"><?php echo $faq['question']; ?></a></li>
@@ -132,8 +132,8 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
     </ul>
   </div>
 
-  <hr/>
-  <div class="col-xs-12 col-md-10 col-md-offset-2">
+  <hr>
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
 <?php 
   foreach ($faqs as $tag => $faq) { ?>
     <h2 id="<?php echo $tag; ?>"><?php echo $faq['question']; ?></h2>
@@ -144,5 +144,19 @@ $faqs_right = array_slice($faqs, count($faqs) / 2);
 ?>
 
   </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('a[href^="#"]').on('click', function(event) {
+          var target = $(this.href);
+          if( target.length ) {
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 1000);
+          }
+      });
+    });
+  </script>
 
 <?php echo $footer; ?>
