@@ -88,7 +88,7 @@ $faqs = array(
     ),
   "questions" => array(
     "question" => "I have more questions how can I get answers?",
-    "answer" => "Please contact us at (TODO: fill out) with any further questions."
+    "answer" => "Please contact us at schroederbride@gmail.com with any further questions. Or give us a call at (408) 384-8467"
     ),
 );
 
