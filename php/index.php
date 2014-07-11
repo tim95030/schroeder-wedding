@@ -27,6 +27,10 @@ Flight::route('/RSVP', function() {
   render_page("rsvp", "RSVP to the Wedding of Gennifer Williams and Tim Schroeder");
 });
 
+Flight::route('/FAQ', function() {
+  render_page("faq", "Frequently Asked Questions");
+});
+
 Flight::route('/registry', function() {
   Flight::redirect("http://www.myregistry.com/public/schroederwedding");
 });
