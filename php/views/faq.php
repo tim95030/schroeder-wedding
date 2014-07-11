@@ -28,7 +28,7 @@ $faqs = array(
     ),
   "time" => array(
     "question" => "What time do things happen?",
-    "answer" => "The ceremony will start 5:30pm and the reception will continue until 11pm. The zoo will also be open during the day from 10am until 4pm. Guests will be asked to vacate the main zoo at 4pm so that a security check can be performed, ensuring the safety of the animals and our guests. During this time, the gift shop and front entrance area will be available for guests to congregate and socialize. Once the security sweep is finished guests will be escorted to the ceremony site. (For a schedule of keeper talks and zoo events please visit <a href=\"http://www.sfzoo.org/explore/today-at-the-zoo.htm\">www.sfzoo.org</a>"
+    "answer" => "The ceremony will start 5:30pm and the reception will continue until 11pm. The zoo will also be open during the day from 10am until 4pm. Guests will be asked to vacate the main zoo at 4pm so that a security check can be performed, ensuring the safety of the animals and our guests. During this time, the gift shop and front entrance area will be available for guests to congregate and socialize. Once the security sweep is finished guests will be escorted to the ceremony site. (For a schedule of keeper talks and zoo events please visit <a href=\"http://www.sfzoo.org/explore/today-at-the-zoo.htm\">www.sfzoo.org</a>)"
     ),
   "ontime" => array(
     "question" => "Do I have to be there on time?",
