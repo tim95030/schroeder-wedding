@@ -58,10 +58,10 @@ $faqs = array(
     "question" => "What if I don't RSVP on time?",
     "answer" => "We leave the gambling to you, but don't risk losing your seat for this awesome event!"
     ),
-  // "lodging" => array(
-  //   "question" => "Where can I stay before and after the wedding?",
-  //   "answer" => ""
-  //   ),
+  "lodging" => array(
+    "question" => "Where can I stay before and after the wedding?",
+    "answer" => "There are lots of hotels in San Francisco, San Jose, and between. We will be staying at the Mill Rose Inn located in Half Moon Bay about 30 minutes south of the zoo. If you would like any further information on lodging feel free to send us a message."
+    ),
   "food" => array(
     "question" => "Will food be served?",
     "answer" => "What kind of foodies would we be if we didn't have food at our wedding? There will be lots of good food. Starting with hors d'oeuvres and drinks during the cocktail hour, and then a dinner buffet, and finally wedding cake of course."
