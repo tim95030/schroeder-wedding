@@ -1,6 +1,8 @@
 <?php echo $header; ?>
 <h1>Recipes</h1>
-
+<br/>
+<p>Help us build a family cookbook with recipes you love, that you share with your family and that have any special significance to you. If there is a significance to the recipe, please include any accompanying stories in the "notes" section below. After the wedding, we will be binding the recipes into a wedding cookbook for us to enjoy for the rest of our lives. Thank you so much for sharing with us!</p>
+<br/>
 <form name="recipes" method="post" action="recipes/add" role="form">
   <div class="form-group">
     <label for="title">Title</label>
