@@ -44,7 +44,7 @@ $faqs = array(
     ),
   "dresscode" => array(
     "question" => "What is the dress code?",
-    "answer" => "While our wedding is taking place at a zoo we expect you dress up as we won't be holding back."
+    "answer" => "Attire should be \"Semi Formal\" or \"Dressy Casual\". What does that mean? He should wear: A suit and tie, darker hues since it is an evening wedding.<br/>She should wear: A cocktail dress or a dressy skirt and top."
     ),
   "rsvp" => array(
     "question" => "Do I really have to RSVP?",
