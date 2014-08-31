@@ -37,7 +37,7 @@ Flight::route('/registry', function() {
 
 Flight::route('/a4720a96fd421581f05f50d35d2dadcfb60d1e89.html', function() {
   Flight::render('mcaffee.html')
-})
+});
 
 include_once 'controllers/recipes.php';
 Flight::start();
