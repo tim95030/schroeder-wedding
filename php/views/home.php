@@ -11,4 +11,9 @@
       <img src="images/HappyCouple.jpg" class="img-responsive" />
     </div>
   </div>
+  <div>
+    <p>Pictures are Available from our Event!!!</p>
+    <p><a href="http://www.pictage.com/1620748">George Street Photos (Professional)</a></p>
+    <p><a href="http://www.wedpics.com">Wed Pics (Use the code: TimAndGenni)</a></p>
+  </div>
 <?php echo $footer; ?>
