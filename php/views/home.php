@@ -6,16 +6,16 @@
   <h3>and</h3>
   <h3>Timothy Edward Schroeder</h3>
   <br />
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <img src="images/HappyCouple.jpg" class="img-responsive" />
-    </div>
-  </div>
-  <br/>
-  <br/>
   <div>
     <h3>Pictures are Available from our Event!!!</h3>
     <p><a href="http://www.pictage.com/1620748">George Street Photos (Professional)</a></p>
     <p><a href="http://www.wedpics.com">Wed Pics (Use the code: TimAndGenni)</a></p>
+  </div>
+  <br/>
+  <br/>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <img src="images/HappyCouple.jpg" class="img-responsive" />
+    </div>
   </div>
 <?php echo $footer; ?>
