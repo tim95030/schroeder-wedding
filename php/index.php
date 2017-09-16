@@ -5,11 +5,11 @@ require 'controllers/utils.php';
 
 Flight::set('flight.log_errors', false);
 
-define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
-define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
-define('DB_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+define('DB_HOST', getenv('MYSQL_SERVICE_HOST'));
+define('DB_USER',getenv('MYSQL_USER'));
+define('DB_PASS',getenv('MYSQL_PASSWORD'));
 define('DB_BASE','wedding');
-define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
+define('DB_PORT',getenv('MYSQL_SERVICE_PORT')); 
 
 $dsn = 'mysql:dbname='.DB_BASE.';host='.DB_HOST.';port='.DB_PORT;
 
